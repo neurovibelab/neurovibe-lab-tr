@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroVibe Lab – Aylin Nazan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <span class="logo-label">NeuroVibe Lab</span>
+    <span class="by">by Aylin Nazan</span>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-sub">Sinir sisteminizi dengeleyin.</p>
+      <h1 class="hero-title">Şu an nasıl<br><span class="accent">hissediyorsunuz?</span></h1>
+    </section>
+
+    <!-- Mood Selector -->
+    <section class="section" id="mood-section">
+      <h2 class="section-label">Durumunuzu seçin</h2>
+      <div class="mood-grid">
+        <button class="mood-btn" data-mood="anxious" data-label="Kaygılı">
+          <span class="mood-icon">⚡</span>
+          <span>Kaygılı</span>
+        </button>
+        <button class="mood-btn" data-mood="overwhelmed" data-label="Bunalmış">
+          <span class="mood-icon">🌊</span>
+          <span>Bunalmış</span>
+        </button>
+        <button class="mood-btn" data-mood="numb" data-label="Hissiz">
+          <span class="mood-icon">🌑</span>
+          <span>Hissiz</span>
+        </button>
+        <button class="mood-btn" data-mood="scattered" data-label="Dağınık">
+          <span class="mood-icon">🌀</span>
+          <span>Dağınık</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tool Panel -->
+    <section class="section tool-panel hidden" id="tool-panel">
+      <div class="tool-header">
+        <h2 class="tool-title" id="tool-title">Araç</h2>
+        <p class="tool-desc" id="tool-desc"></p>
+      </div>
+
+      <!-- Breathwork -->
+      <div class="tool-block" id="tool-breath">
+        <div class="breath-ring" id="breath-ring">
+          <span class="breath-text" id="breath-text">Başla</span>
+        </div>
+        <button class="cta-btn" id="breath-btn">Nefes Egzersizini Başlat</button>
+      </div>
+
+      <!-- Body Scan -->
+      <div class="tool-block hidden" id="tool-scan">
+        <ol class="scan-list" id="scan-list"></ol>
+        <button class="cta-btn" id="scan-btn">Başla</button>
+      </div>
+
+      <!-- Grounding -->
+      <div class="tool-block hidden" id="tool-ground">
+        <div class="ground-card" id="ground-card">
+          <p id="ground-text">Hazır olduğunuzda başlayın.</p>
+        </div>
+        <button class="cta-btn" id="ground-btn">Topraklanmayı Başlat</button>
+      </div>
+
+      <!-- Reset -->
+      <button class="ghost-btn" id="reset-btn">← Geri Dön</button>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Bu araç profesyonel destek yerine geçmez.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
